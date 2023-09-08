@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">5</td><td class="num">71,879</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.AccountTest</td><td><a href="#m0">moveToAccountsPage</a></td><td rowspan="1">1691575828761</td><td rowspan="1">10021</td></tr><tr class="failedodd"><td rowspan="1">tests.BeautyTest</td><td><a href="#m1">navigatetoBeautyPage</a></td><td rowspan="1">1691575808580</td><td rowspan="1">10110</td></tr><tr class="failedeven"><td rowspan="1">tests.HomePageTest</td><td><a href="#m2">verifyMedicineButtonOnHomePage</a></td><td rowspan="1">1691575767090</td><td rowspan="1">31354</td></tr><tr class="failedodd"><td rowspan="1">tests.LabTestsTest</td><td><a href="#m3">navigateToLabTestsPage</a></td><td rowspan="1">1691575818693</td><td rowspan="1">10064</td></tr><tr class="failedeven"><td rowspan="1">tests.WellnessTest</td><td><a href="#m4">verifySupplementOftheWeekonWellnessPage</a></td><td rowspan="1">1691575798462</td><td rowspan="1">10115</td></tr></tbody>
+</table>
+<h2>Test</h2><h3 id="m0">tests.AccountTest#moveToAccountsPage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //android.widget.ImageView[@bounds=&apos;[939,1896][1005,1962]&apos;] (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at utilities.BaseClass.waitForUntilVisible(BaseClass.java:78)
+	at pages.Account.navigateToAccountsPage(Account.java:14)
+	at tests.AccountTest.moveToAccountsPage(AccountTest.java:15)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [c836d556-9b91-48a3-9316-90b1cbf84164, findElement {using=xpath, value=//android.widget.ImageView[@bounds=&apos;[939,1896][1005,1962]&apos;]}]
+Capabilities {appium:app: D:\Akash Data\com.NetmedsMa..., appium:appActivity: com.netmedsmarketplace.netm..., appium:appPackage: com.NetmedsMarketplace.Netmeds, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: D:\Akash Data\com.NetmedsMa..., appActivity: com.netmedsmarketplace.netm..., appPackage: com.NetmedsMarketplace.Netmeds, automationName: UIAutomator2, deviceName: A97-9.0(898X06H5R), platformName: ANDROID, platformVersion: 12, udid: 898X06H5R}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 3, appium:deviceName: 898X06H5R, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2160, appium:deviceUDID: 898X06H5R, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 12, appium:statBarHeight: 77, appium:takesScreenshot: true, appium:udid: 898X06H5R, appium:viewportRect: {height: 1951, left: 0, top: 77, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: c836d556-9b91-48a3-9316-90b1cbf84164
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+	... 31 more
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">tests.BeautyTest#navigatetoBeautyPage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //android.widget.FrameLayout[@content-desc=&quot;Beauty&quot;]/android.widget.FrameLayout/android.widget.ImageView (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at utilities.BaseClass.waitForUntilVisible(BaseClass.java:78)
+	at pages.Beauty.moveToBeautyPage(Beauty.java:15)
+	at tests.BeautyTest.navigatetoBeautyPage(BeautyTest.java:22)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [c836d556-9b91-48a3-9316-90b1cbf84164, findElement {using=xpath, value=//android.widget.FrameLayout[@content-desc=&quot;Beauty&quot;]/android.widget.FrameLayout/android.widget.ImageView}]
+Capabilities {appium:app: D:\Akash Data\com.NetmedsMa..., appium:appActivity: com.netmedsmarketplace.netm..., appium:appPackage: com.NetmedsMarketplace.Netmeds, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: D:\Akash Data\com.NetmedsMa..., appActivity: com.netmedsmarketplace.netm..., appPackage: com.NetmedsMarketplace.Netmeds, automationName: UIAutomator2, deviceName: A97-9.0(898X06H5R), platformName: ANDROID, platformVersion: 12, udid: 898X06H5R}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 3, appium:deviceName: 898X06H5R, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2160, appium:deviceUDID: 898X06H5R, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 12, appium:statBarHeight: 77, appium:takesScreenshot: true, appium:udid: 898X06H5R, appium:viewportRect: {height: 1951, left: 0, top: 77, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: c836d556-9b91-48a3-9316-90b1cbf84164
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+	... 31 more
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">tests.HomePageTest#verifyMedicineButtonOnHomePage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //android.widget.ImageView[@bounds=&apos;[33,507][259,686]&apos;] (tried for 25 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at utilities.BaseClass.waitForUntilVisible(BaseClass.java:78)
+	at pages.HomePage.clickOnMedicineButtonOnHomePage(HomePage.java:13)
+	at tests.HomePageTest.verifyMedicineButtonOnHomePage(HomePageTest.java:17)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [c836d556-9b91-48a3-9316-90b1cbf84164, findElement {using=xpath, value=//android.widget.ImageView[@bounds=&apos;[33,507][259,686]&apos;]}]
+Capabilities {appium:app: D:\Akash Data\com.NetmedsMa..., appium:appActivity: com.netmedsmarketplace.netm..., appium:appPackage: com.NetmedsMarketplace.Netmeds, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: D:\Akash Data\com.NetmedsMa..., appActivity: com.netmedsmarketplace.netm..., appPackage: com.NetmedsMarketplace.Netmeds, automationName: UIAutomator2, deviceName: A97-9.0(898X06H5R), platformName: ANDROID, platformVersion: 12, udid: 898X06H5R}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 3, appium:deviceName: 898X06H5R, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2160, appium:deviceUDID: 898X06H5R, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 12, appium:statBarHeight: 77, appium:takesScreenshot: true, appium:udid: 898X06H5R, appium:viewportRect: {height: 1951, left: 0, top: 77, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: c836d556-9b91-48a3-9316-90b1cbf84164
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+	... 31 more
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">tests.LabTestsTest#navigateToLabTestsPage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //android.widget.ImageView[@bounds=&apos;[723,1896][789,1962]&apos;] (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at utilities.BaseClass.waitForUntilVisible(BaseClass.java:78)
+	at pages.LabTests.moveToLabTestPage(LabTests.java:15)
+	at tests.LabTestsTest.navigateToLabTestsPage(LabTestsTest.java:16)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [c836d556-9b91-48a3-9316-90b1cbf84164, findElement {using=xpath, value=//android.widget.ImageView[@bounds=&apos;[723,1896][789,1962]&apos;]}]
+Capabilities {appium:app: D:\Akash Data\com.NetmedsMa..., appium:appActivity: com.netmedsmarketplace.netm..., appium:appPackage: com.NetmedsMarketplace.Netmeds, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: D:\Akash Data\com.NetmedsMa..., appActivity: com.netmedsmarketplace.netm..., appPackage: com.NetmedsMarketplace.Netmeds, automationName: UIAutomator2, deviceName: A97-9.0(898X06H5R), platformName: ANDROID, platformVersion: 12, udid: 898X06H5R}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 3, appium:deviceName: 898X06H5R, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2160, appium:deviceUDID: 898X06H5R, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 12, appium:statBarHeight: 77, appium:takesScreenshot: true, appium:udid: 898X06H5R, appium:viewportRect: {height: 1951, left: 0, top: 77, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: c836d556-9b91-48a3-9316-90b1cbf84164
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+	... 31 more
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">tests.WellnessTest#verifySupplementOftheWeekonWellnessPage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //android.widget.FrameLayout[@content-desc=&quot;Wellness&quot;]/android.widget.FrameLayout/android.widget.ImageView (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at utilities.BaseClass.waitForUntilVisible(BaseClass.java:78)
+	at pages.Wellness.navigateToWellnessPage(Wellness.java:17)
+	at tests.WellnessTest.verifySupplementOftheWeekonWellnessPage(WellnessTest.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [c836d556-9b91-48a3-9316-90b1cbf84164, findElement {using=xpath, value=//android.widget.FrameLayout[@content-desc=&quot;Wellness&quot;]/android.widget.FrameLayout/android.widget.ImageView}]
+Capabilities {appium:app: D:\Akash Data\com.NetmedsMa..., appium:appActivity: com.netmedsmarketplace.netm..., appium:appPackage: com.NetmedsMarketplace.Netmeds, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: D:\Akash Data\com.NetmedsMa..., appActivity: com.netmedsmarketplace.netm..., appPackage: com.NetmedsMarketplace.Netmeds, automationName: UIAutomator2, deviceName: A97-9.0(898X06H5R), platformName: ANDROID, platformVersion: 12, udid: 898X06H5R}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 3, appium:deviceName: 898X06H5R, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2160, appium:deviceUDID: 898X06H5R, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 12, appium:statBarHeight: 77, appium:takesScreenshot: true, appium:udid: 898X06H5R, appium:viewportRect: {height: 1951, left: 0, top: 77, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: c836d556-9b91-48a3-9316-90b1cbf84164
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+	... 31 more
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
